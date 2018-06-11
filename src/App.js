@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import Comments from './Comments'
+import Share from './Share'
 
 class App extends Component {
   render() {
@@ -38,10 +39,7 @@ class App extends Component {
             </section>
             <div className="article-links">
               <Comments />
-              <a className="article-link" href="#">
-                <i className="fa fa-share"></i>
-                <span className="article-link-text">Share Post</span>
-              </a>
+              <Share />
             </div>
           </div>
           <Sidebar />
