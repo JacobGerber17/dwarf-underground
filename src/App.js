@@ -6,6 +6,8 @@ import Footer from './Footer'
 import Sidebar from './Sidebar'
 import Comments from './Comments'
 import Share from './Share'
+import ArticleBody from './ArticleBody';
+import OtherArticles from './OtherArticles';
 
 class App extends Component {
   render() {
@@ -22,21 +24,7 @@ class App extends Component {
                 <p className="date">on 28 April, 3018 of the Third Age</p>
               </div>
             </div>
-            <section className="article-body">
-              <p><span className="article-start gold">E</span>psum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium.</p>
-
-              <p>Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>
-
-              <p>Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Gratuitous octopus niacin, sodium glutimate.</p>
-
-              <p className="interject">Avast! A stray goblin!</p>
-
-              <p>Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito.</p>
-
-              <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium.</p>
-
-              <p>Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>
-            </section>
+            <ArticleBody />
             <div className="article-links">
               <Comments />
               <Share />
@@ -44,33 +32,7 @@ class App extends Component {
           </div>
           <Sidebar />
 
-          <div className="small-12 columns other-articles">
-            <h2>From around the Realm</h2>
-            <div className="small-6 medium-3 columns other-article">
-              <a href="#">
-                <img src="https://www.enclavepublishing.com/wp-content/uploads/2015/11/tumblr_inline_mtvwr6T4qH1r8eb4v.gif" alt="orc" />
-                <p>Single Orcs in Indianapolis</p>
-              </a>
-            </div>
-            <div className="small-6 medium-3 columns other-article">
-              <a href="#">
-                <img src="https://images.fineartamerica.com/images-medium-large-5/rocky-mountain-landscape-meadow-in-spring-western-panorama-with-wildflowers-square-format-walt-curlee.jpg" alt="mountain" />
-                <p>You won't believe what's under this mountain</p>
-              </a>
-            </div>
-            <div className="small-6 medium-3 columns other-article">
-              <a href="#">
-                <img src="http://orig01.deviantart.net/a278/f/2010/357/9/7/seamless___gold_coins_by_bartalon-d35iydr.jpg" alt="gold" />
-                <p>Mine 20% more gold with One Weird Trick</p>
-              </a>
-            </div>
-            <div className="small-6 medium-3 columns other-article">
-              <a href="#">
-                <img src="http://cdn23.us1.fansshare.com/photos/thehobbit/the-hobbit-square-characters-833282558.jpg" alt="hobbit" />
-                <p>Surprise for Indiana Hobbits born before 1999</p>
-              </a>
-            </div>
-          </div>
+          <OtherArticles />
         </main>
 
         <Footer />
