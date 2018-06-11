@@ -4,11 +4,9 @@ import './App.css';
 import Header from './Header'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
-import Comments from './Comments'
-import Share from './Share'
-import ArticleBody from './ArticleBody';
 import OtherArticles from './OtherArticles';
-import Author from './Author';
+import Article from './Article';
+
 
 class App extends Component {
   render() {
@@ -16,17 +14,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <main className="expanded row">
-          <div className="large-8 medium-12 columns article">
-            <h2 className="article-title">Gold Madness - Fact or Fiction?</h2>
-            <Author />
-            <ArticleBody />
-            <div className="article-links">
-              <Comments />
-              <Share />
-            </div>
-          </div>
+          <Article />
           <Sidebar />
-
           <OtherArticles />
         </main>
 
